@@ -162,8 +162,10 @@ install(
 # Install headers
 install(DIRECTORY include/
   DESTINATION include)
+ament_export_include_directories(include)
 
 # Install pluginlib xml
 pluginlib_export_plugin_description_file(filters "default_plugins.xml")
+
 
 ament_package()
